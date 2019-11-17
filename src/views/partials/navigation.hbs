@@ -1,0 +1,41 @@
+<div class="container1">
+    <nav class="naver">
+        <div>
+            <ul class="navbar-nav ml-auto">
+                {{#if user}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hola, {{user.name}}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/users/logout">Logout</a>
+                    </div>
+                </li>
+                {{else}}
+                <ul>
+                    <li class="element1">
+                        <a href="/users/signin">Login</a>
+                    </li>
+                    <li class="element1">
+                        <a href="/users/signup">Register</a>
+                    </li>
+                </ul>
+                {{/if}}
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <nav>
+        <div>
+            <ul>
+                <li><a href="/" class="element">Inicio</a></li>
+                <li><a href="/Repositorio" class="element">Repositorio</a></li>
+                <li><a href="/HTML" class="element">HTML</a></li>
+                <li><a href="/CSS" class="element">CSS</a></li>
+                <li><a href="/JavaScript" class="element">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>

@@ -11,15 +11,18 @@ router.get('/users/signup', (req, res) => {
 router.post('/users/signup', async (req, res) => {
   let errors = [];
   const { name, email, password, confirm_password } = req.body;
+  if(name.length <= 0 || email.length <= 0 || password.length <= 0 || confirm_password.length <= 0){
+    errors.push({text: 'Por favor, complete los campos.'})
+  }
   if(password != confirm_password) {
-    errors.push({text: 'Passwords do not match.'});
+    errors.push({text: 'Contraseñas no coinciden.'});
   }
   if(password.length < 4) {
-    errors.push({text: 'Passwords must be at least 4 characters.'})
+    errors.push({text: 'Contraseña debe contener al menos 4 caracteres.'})
   }
   if(errors.length > 0){
     res.render('users/signup', {errors, name, email, password, confirm_password});
-  } else {
+  } else{
     // Look for email coincidence
     const emailUser = await User.findOne({email: email});
     if(emailUser) {
@@ -41,7 +44,7 @@ router.get('/users/signin', (req, res) => {
 });
 
 router.post('/users/signin', passport.authenticate('local', {
-  successRedirect: '/notes',
+  successRedirect: '/',
   failureRedirect: '/users/signin',
   failureFlash: true
 }));

@@ -1,0 +1,100 @@
+<header>
+    {{> navigation}}
+</header>
+<main>
+    <div class="contenedor">
+        <section class="cover">
+            <h1>Uso de repositorio - Git - GitHub</h1>
+            <article>
+                <h3>Crear repositorio en GitHub.</h3>
+                <ol>
+                    <li>
+                        <p>Ingresar a GitHub.</p>
+                        <img src="/img/inicioGit.png" width="90%" alt="Captura ingreso GitHub">
+                    </li>
+
+                    <li>
+                        <p> seleccionar "Crear nuevo repositorio".</p>
+                        <img src="/img/new.png" width="60%" alt="Captura ingreso GitHub">
+                    </li>
+
+                    <li>
+                        <p> Dentro de la siguiente ventana llenar los campos.</p>
+                        <img src="/img/Crear.png" width="60%" alt="Captura ingreso GitHub">
+                    </li>
+
+                    <li>
+                        <p> Luego de seleccionar "crear repositorio" se mostrara su repositorio creado, para
+                            utilizarlo selecione "Clonar o descargar" y selecionar el icono que se indica (indica
+                            copiado).</p>
+                        <img src="/img/copiar.png" width="90%" alt="Captura ingreso GitHub">
+                    </li>
+                </ol>
+                <h3>Uso de terminal.</h3>
+                <p>Para los siguientes pasos puede utilizar <a target="_blank"
+                        href="https://git-scm.com/downloads">GIT</a>,
+                    terminal
+                    de Linux o <a target="_blank"
+                        href="https://www.addictivetips.com/windows-tips/open-powershell-in-a-specific-location/attachment/win-10-powershell/">PowerShell</a>
+                    de Windows.</p>
+                <ol>
+                    <li>
+                        <p>Acceda al espacio en el cual desea clonar su repositorio.</p>
+                    </li>
+
+                    <li>
+                        <p>Utilizando el terminal que haya elegido, ejecutar el comando <i>git clone</i> seguido
+                            del
+                            enlace que copio cuando selecciono en el paso 4 de "Crear Repositorio en GitHub."
+                            presion
+                            enter y su repositorio estara clonado.</p>
+                        <img src="/img/git.png" width="80%" alt="Iniciando terminal">
+                        <br>
+                        <img src="/img/pegar.png" width="80%" alt="Ruta de repositorio">
+                        <br>
+                        <img src="/img/clone.png" width="80%" alt="Ruta pegada">
+                        <br>
+                        <img src="/img/clona.png" width="80%" alt="">
+                    </li>
+
+                    <li>
+                        <p>Iniciar un proyecto.</p>
+                    </li>
+                </ol>
+                <h3>Subir un proyecto a Github.</h3>
+                <p>Una vez terminado tu proyecto (y haberlo iniciado con el repositorio clonado) debes seguir estos
+                    pasado para subirlo.</p>
+                <ol>
+                    <li>
+                        <p>Entra a la carpeta que se creo al clonar el repositorio (Donde trabajaste tu proyecto) y
+                            ejecuta el terminal.</p>
+                    </li>
+                    <li>
+                        <p>Una vez hecho utiliza los siguientes comandos:</p>
+                        <ol>
+                            <li>git add -A</li>
+                            <li>git commit -m "Aqui tu commit"</li>
+                            <li>git push</li>
+                        </ol>
+                        <p>Si todo se ejecuta con normalidad veras algo similar a esto:</p>
+                        <img src="/img/master.PNG" width="90%" alt="terminal origin master">
+                    </li>
+                    <li>Entra al enlace de tu repositorio y podras ver los cambios agregados.</li>
+                </ol>
+                <p>Si por el contrario tienes un proyecto finalizado el cual quieres subir a
+                    GitHub sin haberlo trabajado en tu repositorio clonado sigue estos pasos, los cuales encontraras en
+                    GitHub al crear un repositorio sin un README.</p>
+                <ul>
+                    <li>
+                        <img src="/img/subir.PNG" width="80%" alt="subir con GitHub">
+                        <ul>
+                            <li>Cambiar "git add README.md" por "git add -A"</li>
+                            <li>Cambiar el enlace mostrado .git por el enlace a su repositorio en el cual quiere subir
+                                su trabajo </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </div>
+</main>

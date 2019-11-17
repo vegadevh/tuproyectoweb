@@ -1,0 +1,155 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #f2f2f2;
+}
+
+.row{
+    padding: 3em;
+}
+
+a{
+    text-decoration: none;
+    color: #1a8cff;
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 0.5em;
+}
+
+header{
+    padding: 0em;
+    background-color: white;
+}
+
+nav div ul li{
+    display: inline;
+    list-style: none;
+    padding: 1.5em;
+}
+
+
+.naver div ul li{
+    display: inline;
+    list-style: none;
+    padding: 0.5em;
+}
+
+.naver div ul{
+    margin: 0em;
+}
+
+nav div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.naver div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    margin: 0em 7em;
+}
+
+.back{
+    background-image: url(../img/ilya-pavlov-87438-unsplash.jpg);
+    background-size: auto;
+}
+
+.cover{
+    background-color: #f2f2f2;
+    padding: 3em;
+}
+
+h1{
+    margin: 0%;
+}
+
+.element{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+}
+
+.element1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.2em;
+}
+
+img{
+    border: 5px solid black;
+}
+
+.Labo{
+    font-family: 'Shadows Into Light', cursive;
+    color: red;
+    font-size: 1.5em;
+}
+
+.repo{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 6px solid white;
+    border-radius: 2em;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 50%)
+}
+
+.conterepo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 15em 0em;;
+
+}
+
+@media only screen and (max-width: 1300px){
+    .contenedor{
+        margin: 0em;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    .element{
+        font-size: 1.4em;
+    }
+    nav div ul li{
+        display: inline;
+        list-style: none;
+        padding: 1em;
+    }
+    .repo{
+        font-size: 1.3em;
+        border: 4px solid white;
+    }
+    img{
+        border: 2px solid black;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .element{
+        font-size: 1em;
+    }
+    .cover{
+        padding: 1em;
+    }
+}
