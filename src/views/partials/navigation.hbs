@@ -1,7 +1,7 @@
 <div class="container1">
     <nav class="naver">
         <div>
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto myspace">
                 {{#if user}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -10,6 +10,8 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/users/logout">Logout</a>
+                        <a class="dropdown-item" href="/notes/add">Notas de clase</a>
+                        <a class="dropdown-item" href="/notes">Ver todas las notas</a>
                     </div>
                 </li>
                 {{else}}

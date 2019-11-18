@@ -5,7 +5,10 @@ body{
 }
 
 .row{
-    padding: 3em;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin: 0em;
 }
 
 a{
@@ -23,11 +26,25 @@ main{
     align-items: center;
 }
 
+.myspace{
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
 .container1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding-right: 0.5em;
+}
+
+.mycontent1{
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.form1{
+    width: 60%;
 }
 
 header{
